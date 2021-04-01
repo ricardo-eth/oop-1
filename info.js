@@ -43,7 +43,7 @@ let userTwo = user2.language.length
   } else if (userOne < userTwo) {
     return `${user2.firstName} of the person who knows the most programming languages.`
   } else {
-    return `draw`
+    return `Both people know the same amount of programming languages.`
   }
 }
 
