@@ -10,10 +10,12 @@ class Point {
     return this.x === point.x && this.y === point.y ? true : false
   }
   distance(value2) {
-    let xa = this.x * this.x
-    let xb = value2.x * value2.x
-    let ya = this.y * this.y
-    let yb = value2.y * value2.y
+
+    // Math.pow(base, exponent)
+    let xa = Math.pow(this.x, 2)
+    let xb = Math.pow(value2.x, 2)
+    let ya = Math.pow(this.y, 2) // = this.y * this.y
+    let yb = Math.pow(value2.y, 2)
 
      return (Math.sqrt((xb - xa) + (yb - ya)))
   }

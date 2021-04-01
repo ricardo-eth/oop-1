@@ -22,7 +22,7 @@ class Human {
       let userTwo = user2.language.length
 
       if (userOne > userTwo) {
-      return `${this.firstName} of the person who knows the most programming languages.`
+        return `${this.firstName} of the person who knows the most programming languages.`
       } else if (userOne < userTwo) {
         return `${user2.firstName} of the person who knows the most programming languages.`
       } else {
