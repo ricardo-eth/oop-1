@@ -18,10 +18,8 @@ class Point {
     let yb = Math.pow(value2.y, 2)
 
      return (Math.sqrt((xb - xa) + (yb - ya)))
+
   }
 } 
 
-const p1 = new Point(1, 2)
-const p2 = new Point(10, 11)
-
-console.log(p1.distance(p2))
+exports.Point = Point

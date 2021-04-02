@@ -15,7 +15,7 @@ class Human {
       })
     }
     canVote() {
-      console.log(this.age > 18)
+      console.log(this.age >= 18)
     }
     mostSkilledDev(user2) {
       let userOne = this.language.length
@@ -31,12 +31,20 @@ class Human {
     }
 }
 
-const alice = new Human('Alice', 'Liddell', 28, ['PHP','Ruby','Java','Python', 'GO'])
-const bob = new Human('Bob', 'Lemon', 30, ['JavaScript','HTML/CSS','Swift','C++'])
-const charlie = new Human('Charlie', 'Charlot', 8, ['HTML/CSS','PHP','GO'])
+// User for mostSkilledDev test
+// const alice = new Human('Alice', 'Liddell', 28, ['PHP','Ruby','Java','Python', 'GO'])
+// const bob = new Human('Bob', 'Lemon', 30, ['JavaScript','HTML/CSS','Swift','C++'])
+// const charlie = new Human('Charlie', 'Charlot', 8, ['HTML/CSS','PHP','GO'])
+
+// printInfo test
+// --> Exemple d'utilisation: bob.printInfo()
+
+// canVote test
+// --> Exemple d'utilisation: alice.canVote()
 
 
-bob.printInfo()
-alice.canVote()
 
-console.log(charlie.mostSkilledDev(bob))
+// mostSkilledDev test
+// --> Exemple d'utilisation: console.log(charlie.mostSkilledDev(bob))
+
+exports.Human = Human

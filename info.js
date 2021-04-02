@@ -29,9 +29,8 @@ const printInfo = (person) => {
 }
 
 const canVote = (person) => {
-  console.log(person.age > 18)
+  return person.age >= 18
 }
-
 
 const mostSkilledDev = (user1, user2) => {
 
@@ -48,3 +47,4 @@ let userTwo = user2.language.length
 }
 
 console.log(mostSkilledDev(bob, charlie))
+console.log(canVote(charlie))
