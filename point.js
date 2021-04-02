@@ -12,12 +12,7 @@ class Point {
   distance(value2) {
 
     // Math.pow(base, exponent)
-    let xa = Math.pow(this.x, 2)
-    let xb = Math.pow(value2.x, 2)
-    let ya = Math.pow(this.y, 2) // = this.y * this.y
-    let yb = Math.pow(value2.y, 2)
-
-     return (Math.sqrt((xb - xa) + (yb - ya)))
+    return Math.sqrt((Math.pow((value2.x-this.x),2))+(Math.pow((value2.y-this.y),2)))
 
   }
 } 
